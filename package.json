@@ -7,7 +7,7 @@
   "repository": "https://github.com/RYTong/autocomplete-emp-lua",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": "<2.0.0"
   },
   "providedServices": {
     "autocomplete.provider": {
