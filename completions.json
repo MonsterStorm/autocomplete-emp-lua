@@ -76,7 +76,7 @@
       {
         "name":"showControl",
         "text":null,
-        "snippet":"showContent(${1:object}, ${2:tag})$3",
+        "snippet":"showControl(${1:object}, ${2:tag})$3",
         "description":"在当前页面上层再悬浮显示另一个页面.与window:hide()配合使用，详见window:hide().",
         "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/FunctionInLibrary.html#windowshowcontrol",
         "leftLabel":"Void",
@@ -85,7 +85,7 @@
       {
         "name":"showControl",
         "text":null,
-        "snippet":"showContent(${1:object}, ${2:tag}, ${3:transitionType})$4",
+        "snippet":"showControl(${1:object}, ${2:tag}, ${3:transitionType})$4",
         "description":"在当前页面上层再悬浮显示另一个页面.与window:hide()配合使用，详见window:hide().",
         "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/FunctionInLibrary.html#windowshowcontrol",
         "leftLabel":"Void",
