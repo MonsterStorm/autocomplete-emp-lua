@@ -1,7 +1,7 @@
 {
   "name": "autocomplete-emp-lua",
   "main": "./lib/main",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "EMP Lua API autocompletions",
   "keywords": [],
   "repository": "https://github.com/RYTong/autocomplete-emp-lua",
