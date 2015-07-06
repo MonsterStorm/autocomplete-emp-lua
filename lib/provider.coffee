@@ -26,7 +26,6 @@ module.exports =
         file = path.join completionsDir, file
         data = require file
         @completions[k] = v for k, v of data
-        console.log @completions
       return
     # fs.readFile ,completionsDir, (error, content) =>
     #   return if error?
