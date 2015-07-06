@@ -1626,5 +1626,368 @@
         "type":"method"
       }
     ]
+  },
+
+
+  "transition": {
+    "completions": [
+      {
+        "name":"from",
+        "text":null,
+        "snippet":"from(${1:object}, ${2:property})$3",
+        "description":"如果与to()一起使用，必须保证object为同一个对象.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#from",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"to",
+        "text":null,
+        "snippet":"to(${1:object}, ${2:property}, ${3:duration})$4",
+        "description":"动画开始，达到目标transition后停止。如果与from()一起使用，必须保证object为同一个对象.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#to",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"setCurve",
+        "text":null,
+        "snippet":"setCurve(${1:object}, ${2:curve})$3",
+        "description":"在动画开始前设置.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#setcurve",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"setRepeatCount",
+        "text":null,
+        "snippet":"setRepeatCount(${1:object}, ${2:repeatCount})$3",
+        "description":"-1表示无限循环.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#setrepeatcount",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"translate",
+        "text":null,
+        "snippet":"translate(${1:object}, ${2:x}, ${3:y}, ${4:duration})$5",
+        "description":"将object控件沿x轴及y轴位移.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#translate",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"translateX",
+        "text":null,
+        "snippet":"translateX(${1:object}, ${2:x}, ${3:duration})$4",
+        "description":"将object控件沿x轴位移.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#translatex",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"translateY",
+        "text":null,
+        "snippet":"translateY(${1:object}, ${2:y}, ${3:duration})$4",
+        "description":"将object控件沿y轴位移.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#translatey",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"scale",
+        "text":null,
+        "snippet":"scale(${1:object}, ${2:x}, ${3:y}, ${4:duration})$5",
+        "description":"将object控件进行缩放.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#scale",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"scaleX",
+        "text":null,
+        "snippet":"scaleX(${1:object}, ${2:x}, ${3:duration})$4",
+        "description":"相当于scale(x, 1).",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#scalex",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"scaleY",
+        "text":null,
+        "snippet":"scaleY(${1:object}, ${2:y}, ${3:duration})$4",
+        "description":"相当于scale(1, y).",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#scaley",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"alpha",
+        "text":null,
+        "snippet":"alpha(${1:object}, ${2:alpha}, ${3:duration})$4",
+        "description":"更改控件的透明度.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#alpha",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"rotate",
+        "text":null,
+        "snippet":"rotate(${1:object}, ${2:angle}, ${3:axis}, ${4:duration})$5",
+        "description":"在2D平面上更改控件的旋转角度.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#rotate",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"skew",
+        "text":null,
+        "snippet":"skew(${1:object}, ${2:xangle}, ${3:yangle}, ${4:duration})$5",
+        "description":"在2D平面上更改控件的斜拉角度.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#skew",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"skewX",
+        "text":null,
+        "snippet":"skewX(${1:object}, ${2:angle}, ${3:duration})$4",
+        "description":"在2D平面上更改控件x轴方向的斜拉角度.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#skewX",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"skewY",
+        "text":null,
+        "snippet":"skewY(${1:object}, ${2:angle}, ${3:duration})$4",
+        "description":"在2D平面上更改控件y轴方向的斜拉角度",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#skewY",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"matrix",
+        "text":null,
+        "snippet":"matrix(${1:object}, ${2:matrixTable}, ${3:duration})$4",
+        "description":"改变空间的矩阵.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#matrix",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"setStartListener",
+        "text":null,
+        "snippet":"setStartListener(${1:object}, ${2:function})$3",
+        "description":"在动画开始前调用该监听方法.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#setstartlistener",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"setStopListener",
+        "text":null,
+        "snippet":"setStopListener(${1:object}, ${2:function})$3",
+        "description":"在动画开始前调用该监听方法.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#setstoplistener",
+        "leftLabel":"Void",
+        "type":"method"
+      }
+    ]
+  },
+
+
+  "animation": {
+    "completions": [
+      {
+        "name":"newFrames",
+        "text":null,
+        "snippet":"newFrames(${1:frameTable})$2",
+        "description":"初始化一个新的动画，由play()方法启动该动画。返回新创建的动画对象.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#newframes",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"setFrame",
+        "text":null,
+        "snippet":"setFrame(${1:object}, ${2:frame})$3",
+        "description":"frame表示动画显示区域，x、y为动画相对于父控件的显示位置（父控件由add方法设置）.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#setframe",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"setDuration",
+        "text":null,
+        "snippet":"setDuration(${1:object}, ${2:duration})$3",
+        "description":"代表每一帧帧图片的持续时间.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#setduration",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"setRepeatCount",
+        "text":null,
+        "snippet":"setRepeatCount(${1:object}, ${2:repeatCount})$3",
+        "description":"代表播放的次数.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#setrepeatcount",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"add",
+        "text":null,
+        "snippet":"add(${1:object}, ${2:superView})$3",
+        "description":"添加动画视图.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#add",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"play",
+        "text":null,
+        "snippet":"play(${1:object})$2",
+        "description":"播放动画.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#play",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"stop",
+        "text":null,
+        "snippet":"stop(${1:object})$2",
+        "description":"停止动画.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#stop",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"setStartListener",
+        "text":null,
+        "snippet":"setStartListener(${1:object}, ${2:function})$3",
+        "description":"在动画开始前调用该监听方法（必须在play方法前设置）.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#setstartlistener",
+        "leftLabel":"Void",
+        "type":"method"
+      },
+      {
+        "name":"setStopListener",
+        "text":null,
+        "snippet":"setStopListener(${1:object}, ${2:function})$3",
+        "description":"在动画结束后调用该监听方法（必须在play方法前设置）.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#setstoplistener",
+        "leftLabel":"Void",
+        "type":"method"
+      }
+    ]
+  },
+
+
+  "curve": {
+    "completions": [
+      {
+        "name":"linear",
+        "text":"linear",
+        "snippet":null,
+        "description":"匀速进出.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#curve",
+        "type":"value"
+      },
+      {
+        "name":"ease_in",
+        "text":"ease_in",
+        "snippet":null,
+        "description":"淡入.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#curve",
+        "type":"value"
+      },
+      {
+        "name":"ease_out",
+        "text":"ease_out",
+        "snippet":null,
+        "description":"淡出.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#curve",
+        "type":"value"
+      },
+      {
+        "name":"ease_inout",
+        "text":"ease_inout",
+        "snippet":null,
+        "description":"淡入淡出.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#curve",
+        "type":"value"
+      }
+    ]
+  },
+
+
+  "transitionType": {
+    "completions": [
+      {
+        "name":"flipFromLeft",
+        "text":"flipFromLeft",
+        "snippet":null,
+        "description":"翻转效果，从左侧翻转（目前仅支持iOS）.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#transitiontype",
+        "type":"value"
+      },
+      {
+        "name":"flipFromRight",
+        "text":"flipFromRight",
+        "snippet":null,
+        "description":"翻转效果，从右侧翻转（目前仅支持iOS）.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#transitiontype",
+        "type":"value"
+      },
+      {
+        "name":"curlUp",
+        "text":"curlUp",
+        "snippet":null,
+        "description":"页面卷曲效果，向上卷曲（目前仅支持iOS）.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#transitiontype",
+        "type":"value"
+      },
+      {
+        "name":"curlDown",
+        "text":"curlDown",
+        "snippet":null,
+        "description":"页面卷曲效果，向下卷曲（目前仅支持iOS）.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#transitiontype",
+        "type":"value"
+      },
+      {
+        "name":"slideFromLeft",
+        "text":"slideFromLeft",
+        "snippet":null,
+        "description":"页面从左向右平推，旧页面被退出屏幕，新页面从左侧被推进屏幕.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#transitiontype",
+        "type":"value"
+      },
+      {
+        "name":"slideFromRight",
+        "text":"slideFromRight",
+        "snippet":null,
+        "description":"页面从右向左平推，旧页面被退出屏幕，新页面从右侧被推进屏幕.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#transitiontype",
+        "type":"value"
+      },
+      {
+        "name":"slideFromUp",
+        "text":"slideFromUp",
+        "snippet":null,
+        "description":"页面从上向下平推，旧页面被退出屏幕，新页面从上方被推进屏幕.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#transitiontype",
+        "type":"value"
+      },
+      {
+        "name":"slideFromDown",
+        "text":"slideFromDown",
+        "snippet":null,
+        "description":"页面从下向上平推，旧页面被退出屏幕，新页面从下方被推进屏幕.",
+        "descriptionMoreURL":"http://192.168.64.165/emp5.3/info_center/emp_ui_reference/lua/Animation.html#transitiontype",
+        "type":"value"
+      }
+    ]
   }
 }
