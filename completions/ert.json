@@ -1,0 +1,220 @@
+{
+  "ert": {
+    "completions": [
+      {
+        "name": "config",
+        "text": "config",
+        "snippet": null,
+        "description": "ert全局配置",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Table", 
+        "type": "property"
+      },
+      {
+        "name": "channel",
+        "text": "channel",
+        "snippet": null,
+        "description": "channel页面跳转相关功能函数",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Table",
+        "type": "property"
+      },
+      {
+        "name": "platform",
+        "text": "platform",
+        "snippet": null,
+        "description": "平台相关功能函数",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Table",
+        "type": "property"
+      },
+      {
+        "name": "dom",
+        "text": "dom",
+        "snippet": null,
+        "description": "DOM操作相关功能函数",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Table",
+        "type": "property"
+      },
+      {
+        "name": "debug",
+        "text": "debug()",
+        "snippet": null,
+        "description": "debug日志",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Void",
+        "type": "method"
+      },
+      {
+        "name": "print_t",
+        "text": "print_t()",
+        "snippet": null,
+        "description": "打印日志",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Void",
+        "type": "method"
+      }
+    ]
+  },
+  "config": {
+    "completions": [
+      {
+        "name": "ui_debug",
+        "text": "ui_debug",
+        "snippet": null,
+        "description": "UI debug",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Boolean",
+        "type": "property"
+      },
+      {
+        "name": "debug_message",
+        "text": "debug_message",
+        "snippet": null,
+        "description": "debug message",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Boolean",
+        "type": "property"
+      }
+    ]
+  },
+  "channel": {
+    "completions": [
+      {
+        "name": "first_page",
+        "text": null,
+        "snippet": "first_page(${1:id}, ${2:trancode}, ${3:post_body}, ${4:options})$5",
+        "description": "根据是否为开发模式请求不同数据来源",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Void",
+        "type": "method"
+      },
+      {
+        "name": "next_page",
+        "text": null,
+        "snippet": "next_page(${1:id}, ${2:trancode}, ${3:post_body}, ${4:options})$5",
+        "description": "根据是否为开发模式请求不同数据来源",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Void",
+        "type": "method"
+      },
+      {
+        "name": "back",
+        "text": "back()",
+        "snippet": null,
+        "description": "用于channel流程结束后，跳回进入channel的界面",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Void",
+        "type": "method"
+      }
+    ]
+  },
+  "platform": {
+    "completions": [
+      {
+        "name": "os_info",
+        "text": "os_info()",
+        "snippet": null,
+        "description": "获取手机平台",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "String",
+        "type": "method"
+      }
+    ]
+  },
+  "dom": {
+    "completions": [
+      {
+        "name": "get_ctrl_by_name",
+        "text": null,
+        "snippet": "get_ctrl_by_name(${1:name})$2",
+        "description": "根据名称获取控件.",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Userdata",
+        "type": "method"
+      },
+      {
+        "name": "get_ctrl",
+        "text": null,
+        "snippet": "get_ctrl(${1:table})$2",
+        "description": "根据输入属性获取控件.",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Userdata",
+        "type": "method"
+      },
+      {
+        "name": "set_style_by_name",
+        "text": null,
+        "snippet": "set_style_by_name(${1:name}, ${2:style}, ${3:value})$4",
+        "description": "根据名称改变控件样式.",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Void",
+        "type": "method"
+      },
+      {
+        "name": "set_property_by_name",
+        "text": null,
+        "snippet": "set_style_by_name(${1:name}, ${2:property}, ${3:value})$4",
+        "description": "根据名称改变控件属性.",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Void",
+        "type": "method"
+      },
+      {
+        "name": "set_ctrls_property_by_name",
+        "text": null,
+        "snippet": "set_ctrls_property_by_name(${1:tab_name}, ${2:property}, ${3:value})$4",
+        "description": "改变一系列控件属性.",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Void",
+        "type": "method"
+      },
+      {
+        "name": "set_ctrls_style_by_name",
+        "text": null,
+        "snippet": "set_ctrls_style_by_name(${1:tab_name}, ${2:style}, ${3:value})$4",
+        "description": "改变一系列控件样式.",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Void",
+        "type": "method"
+      },
+      {
+        "name": "get_style_by_name",
+        "text": null,
+        "snippet": "get_style_by_name(${1:name}, ${2:style})$3",
+        "description": "根据名称获取控件样式.",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Table",
+        "type": "method"
+      },
+      {
+        "name": "get_property_by_name",
+        "text": null,
+        "snippet": "get_property_by_name(${1:name}, ${2:property})$3",
+        "description": "根据名称获取控件属性.",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "Table",
+        "type": "method"
+      },
+      {
+        "name": "get_ctrl_value",
+        "text": null,
+        "snippet": "get_ctrl_value(${1:name}, ${2:message})$3",
+        "description": "根据名称获取控件值.",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "String",
+        "type": "method"
+      },
+      {
+        "name": "get_ctrl_value",
+        "text": null,
+        "snippet": "get_ctrl_value(${1:name}, ${2:message}, ${3:require})$4",
+        "description": "根据名称获取控件值.",
+        "descriptionMoreURL": "http://undefined",
+        "leftLabel": "String",
+        "type": "method"
+      }
+    ]
+  }
+}

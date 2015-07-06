@@ -18,11 +18,20 @@ module.exports =
 
   loadCompletions: ->
     @completions ?= {}
+    completionsDir = path.resolve(__dirname, '..', 'completions')
 
-    fs.readFile path.resolve(__dirname, '..', 'completions.json'), (error, content) =>
+    fs.readdir completionsDir, (error, files) =>
       return if error?
-      @completions = JSON.parse(content)
+      files.forEach (file) =>
+        file = path.join completionsDir, file
+        data = require file
+        @completions[k] = v for k, v of data
+        console.log @completions
       return
+    # fs.readFile ,completionsDir, (error, content) =>
+    #   return if error?
+    #   @completions = JSON.parse(content)
+    #   return
 
   getCompletions: (line) ->
     completions = []
